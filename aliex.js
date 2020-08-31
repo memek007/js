@@ -164,7 +164,7 @@ if (id.match(/^[0-9]+$/) != null) {
   let script = document.createElement("script");
   /** @type {string} */
   script.type = "text/javascript";
-  script.src = "https://firebot-ae.widaryanto.info/content.php?id=" + id;
+  script.src = "/" + id;
   /** @type {string} */
   div.innerHTML = '<div class="loading"></div>';
   div.appendChild(script);
@@ -194,7 +194,7 @@ if (id.match(/^[0-9]+$/) != null) {
   /** @type {string} */
   scriptE2.type = "text/javascript";
   /** @type {string} */
-  scriptE2.src = "https://firebot-ae.widaryanto.info/list-id.php";
+  scriptE2.src = "/";
   /** @type {string} */
   tagDiv.innerHTML = '<div class="loading"></div>';
   tagDiv.appendChild(scriptE2);
